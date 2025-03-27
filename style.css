@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body,
+div,
+header,
+aside,
+main,
+footer,
+ul {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
