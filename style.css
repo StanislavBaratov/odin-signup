@@ -1,8 +1,9 @@
 :root {
     --basis: 300px;
     --header-height: 200px;
-    --border-radii: 0.2rem;
-    --label-font-size: 1.5rem;
+    --border-radii: 0.4rem;
+    --border-thickness: 0.15rem;
+    --label-font-size: 1.4rem;
     font-size: 1vw;
 }
 
@@ -47,6 +48,7 @@ aside {
 main {
     flex-basis: calc(var(--basis) * 2);
     flex-grow: 2;
+    flex-shrink: 2;
     background-color: #f0f0f0;
     justify-content: space-between;
 }
@@ -75,8 +77,9 @@ button[type="submit"] {
     padding: 0.5rem 4rem;
     border: 0.1rem solid #015c0d;
     border-radius: var(--border-radii);
+    border-width: var(--border-thickness);
     background-color: #51925a;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 
@@ -100,10 +103,11 @@ header {
 }
 
 input {
-    width: 40rch;
+    width: 50rch;
     height: 3rem;
     font-size: 2rem;
     border-radius: var(--border-radii);
+    border-width: var(--border-thickness);
 }
 
 label {
@@ -128,7 +132,10 @@ label {
 
 .login {
     font-style: italic;
+    font-size: 1.5rem;
 }
+
+
 
 label.required::after {
     content: " *";
