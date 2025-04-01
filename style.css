@@ -108,6 +108,7 @@ input {
     font-size: 2rem;
     border-radius: var(--border-radii);
     border-width: var(--border-thickness);
+    border-style: solid;
 }
 
 label {
@@ -141,4 +142,27 @@ label.required::after {
     content: " *";
     color: red;
     font-size: var(--label-font-size);
+}
+
+input:valid {
+    border-color: #039c17;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0rem #025e0e54;
+}
+
+input:invalid {
+    border-color: #c90202;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0rem #c9020254;
+}
+
+input:focus {
+    border-color: #088519;
+    background-color: #21f13d10;
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+label + input {
+    margin-top: 0.4rem;
 }
